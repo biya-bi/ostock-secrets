@@ -25,9 +25,11 @@ create_secret() {
 
     local known_hosts=$(create_known_hosts_file "${hosts}")
 
+    # The identity key is required by Flux to authenticate towards a Git repository
     kubectl create secret generic "${secret_name}" \
         --type="kubernetes.io/ssh-auth" \
         --from-file=ssh-privatekey="${private_key_file}" \
+        --from-file=identity="${private_key_file}" \
         --from-file=known_hosts="${known_hosts}" \
         -o yaml \
         --namespace="${namespace}" \
