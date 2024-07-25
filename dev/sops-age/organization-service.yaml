@@ -1,0 +1,30 @@
+apiVersion: v1
+data:
+    datasource-password: ENC[AES256_GCM,data:lXfsMuZHdz18EjQ8,iv:2kJD7EZsB8eEjGRGz1MTaNCG9DLirPh78/OJcZdXbWY=,tag:efRJg68QDRGIuS3kem5cuA==,type:str]
+    datasource-url: ENC[AES256_GCM,data:5GIOpuUOOnHkaDpIjgo3uAgyHjcmmoDWWmBhPU2vwWQ+d+/AXtq4GG6ZggFIUttV8gtR6w==,iv:L47Ogf/G3ursFLlnMA2QFEgaKNRHKAyablusNiLnPJ4=,tag:mBjD4N4fj9+En857LTTIPA==,type:str]
+    datasource-username: ENC[AES256_GCM,data:T7rWflztO9t/U/rI,iv:og5isrESclQM4FEDwb69QG06WwiGJk2em3d9IksPYK4=,tag:z50DF0sf9do5S8kBeISybg==,type:str]
+    jwt-issuer-uri: ENC[AES256_GCM,data:oi99e3is3Ap6CIBU6k6blDyyCOTFNyiWOb2O45mQboXQtbTsQbzcjapRn4B8k7RlXfx9f6j6Edk=,iv:oGFbqb1+HdQHflqRbLexZZUdcBrFDs2kPPZ0dc/THSE=,tag:T0lAxJrS984hZX93KzAUGQ==,type:str]
+kind: Secret
+metadata:
+    name: organization-service
+    namespace: ostock
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiMXFWM3cvODF0TVRMWkxI
+            cXBXQkw5VEgrOWpPYUxTTG1HWXlkMHVUWVQ4CnpMYThKWFlHaXNJM3VmQU5wRE5u
+            NTRFSTNLbFhrcGZqUEU2aFJJeGE2YlkKLS0tIEVRbHA5NHdlZkJ3OU44QkFCVnBt
+            alhtbGdUU0V1aVFvRUg3d2xaK0N6TncKMgWpmZ+M5gK+wi4maRXON9G0SBDw2mBw
+            +Sq4Fa+Ed+ZZsTXw3U1msQdnMgv/3B210sW7YzSWKEz+q/9UpwRoHg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-07-25T05:07:37Z"
+    mac: ENC[AES256_GCM,data:zPp5SC8zrNlLO/QGPF3BGyxgbeJB5gwQmHRyhItDWVo6Mm/wsPx1gMnAd4YkEDenVfV9fM8bksENlr/A9oOXzGMWqWCjhUei20u/54Avq0Ke5aYdepNtSTXenxl4nSK1vlaVybm/fOd0hRmAdbQPed0hSx57oWXg0j3agvgoWSE=,iv:YHFDHL+Dr1gbggypzqMgpF2+0XuD+cOkNEeA1P29jYA=,tag:XWV6nDf1mk+NMWmGNXIBlw==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0
