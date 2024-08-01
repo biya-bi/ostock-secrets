@@ -1,0 +1,29 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:4T2/UmhB+EaHcNb1rFq2jg==,iv:0nCeKZxYnU8Q6rDyzwwFl5hydZuuGTiXmIqG1Tfym48=,tag:ZZwlwK14061Lm8ETEWOWuQ==,type:str]
+    url: ENC[AES256_GCM,data:qeWwL6M8GUFjDIaP5YpUTZbGUP3AdBYzSN187rvX8ujW66xUn2vbf/kE2KaLnp1MmlLV2w==,iv:cyOy2MO2861r17U09BneLVe+u4oHj6JaAbSePalMfN8=,tag:NchM8zR38r0rYSOv8EI2lg==,type:str]
+    user: ENC[AES256_GCM,data:EW9vGfzs+T6uqiTb,iv:zj3la4Kb9KoMTyn9bJGSmvUn8W3uMOh6pMPU7ydW9ZA=,tag:bNQD3yeILk16GAOE8tOf5w==,type:str]
+kind: Secret
+metadata:
+    name: postgres
+    namespace: ostock
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsUURUNysrRk04c1dOVG03
+            RW9iSGxSNkxtTmZmNTB0SDV1dEdYWkY4SGs0CmdIVVZHYnhKVEtVRldtbHYxdGht
+            ZXlsSEVkVDdQVnNOMW83TnhuZEpSTVUKLS0tIHl2OHVkcFhkeEsrTU5FMFZOWWpj
+            SUdETGZDckxFZmd3Qm12djRqQW0vMkEKVa1txRk8KIcnmvnZPnKCSLlm8G+k+tS3
+            TtV90WtXsiAPoh9YxMGm33f/n6fEIFnhzbCjHVGNSLnLZR49TLdRSA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-08-01T14:39:16Z"
+    mac: ENC[AES256_GCM,data:Xl7H7vP5UmMy4iR5JAllkyZy2eaURSDzjt2XcjrbfoAUYYx0X9Z9kfqWM3ZpDKStPpaR3TP8z+tYuPNvAO2wKhFSqwZl9Juo7QCT4W1cswutWco9wSxuBowObF2U1HJXhW7kibub0shNHWEyLWD6c1mPFVdQnO2SwWwLyuAe9E4=,iv:xNnQpNOie+S379Qc3S1iiyzCl0CY3zNa474aXon3OCU=,tag:CUXBmHpAAd4E5+smaoQ6Ew==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0

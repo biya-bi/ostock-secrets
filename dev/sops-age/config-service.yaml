@@ -1,0 +1,27 @@
+apiVersion: v1
+data:
+    encrypt.key: ENC[AES256_GCM,data:ywrOaY+gN1fDCLMfrZPNSZtfZHz9UkEZHjonggyMTxCaohu87hmG45KEpg4=,iv:BdCaT/doIYlO5++A/KwvoT5Wq4d9Xls+8yWjaY1wl8g=,tag:uBDlBXiRy/3cQFESd0ghwQ==,type:str]
+kind: Secret
+metadata:
+    name: config-service
+    namespace: ostock
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyVEZlZUJkV1l2UEQ1TzVu
+            NUx1N3kyM3d2c084RzZpM3RaMW1WMVNCNlE4Ck5DVk0rS0JJank3MGJ3U0dIUmpJ
+            eFVqZXpJaTAwdytqL004NDIvNDVTMjgKLS0tIFF6Q2ZoQUk1Z2NSVVAyamJ0RC90
+            N2dmSUFyOEtRbzNjVXEybG10UCs2alUKbL5OQxJpWsgkPuQFEefyOsVHmv5D/IHU
+            kUrJctfUbh1lgPO/29IRzla+2Duyy6YXVeYKMDQ/8FGGb9oJZd2FAg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-08-01T14:39:10Z"
+    mac: ENC[AES256_GCM,data:ZeODCqADhKfd9lZ0eCJp9rLCtWB7tOgwA7lUI/4ZI0trKuUMBUluuCPuwXp+TBx0w/13HOMQHpCPj6D7+TPA4YHo510MYaOglW673cvYYA8NGws1WN3gxsVUw+hTJZyfM1ArgROlooDlkC+rFxVAdagl+wslOePktASmETaALEI=,iv:1EYuPzpOjKdQEUrWLopzR1rgX9vTmBPignmZT4a6waQ=,tag:ivI7255IuM3bTHHeLQ3UgQ==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0
