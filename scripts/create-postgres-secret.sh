@@ -13,11 +13,14 @@ create_secret() {
     local env="$1"
 
     local secret_yaml="${project_dir}/${env}/sops-age/${secret_name}.yaml"
-    local config_dir="${OSTOCK_CONFIG_DIR}"
-    local credentials_dir="${config_dir}/database"
-    local user=$(cat "${credentials_dir}/user")
-    local password=$(cat "${credentials_dir}/password")
-    local url=$(cat "${credentials_dir}/url")
+
+    local config_dir="${NGUILAND_CONFIG_DIR}/${env}/ostock"
+
+    local database_dir="${config_dir}/database"
+
+    local user=$(cat "${database_dir}/user")
+    local password=$(cat "${database_dir}/password")
+    local url=$(cat "${database_dir}/url")
 
     kubectl create secret generic "${secret_name}" \
         --from-literal=url="${url}" \
