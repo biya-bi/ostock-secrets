@@ -13,7 +13,7 @@ create_secret() {
     local env="$1"
 
     local secret_yaml="${project_dir}/${env}/sops-age/${secret_name}.yaml"
-    local credentials_dir="${NGUILAND_DATABASE_CONNECTION_STRING_DIR}"
+    local credentials_dir="${OSTOCK_DATABASE_CONNECTION_STRING_DIR}"
     local user=$(cat "${credentials_dir}/user")
     local password=$(cat "${credentials_dir}/password")
     local url=$(cat "${credentials_dir}/url")
